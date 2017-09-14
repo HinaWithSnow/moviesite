@@ -1,0 +1,110 @@
+<ngb-carousel  [@HideState]='isDisplay'>
+  <ng-template ngbSlide>
+    <img src="./assets/covers/1.jpg" alt="Random first slide">
+    <div class="carousel-caption">
+      <h3>See News</h3>
+      <p>Dates for oscar has been decided. Get your seats from here<button class="btn btn-md btn-danger">Get Seats</button></p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="./assets/covers/2.jpg" alt="Random second slide">
+    <div class="carousel-caption">
+      <h3>See News</h3>
+      <p>Dates for oscar has been decided. Get your seats from here<button class="btn btn-md btn-danger">Get Seats</button></p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="./assets/covers/3.jpg"  alt="Random third slide">
+    <div class="carousel-caption">
+      <h3>See News</h3>
+      <p>Dates for oscar has been decided. Get your seats from here<button class="btn btn-md btn-danger">Get Seats</button></p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="./assets/covers/4.jpg"  alt="Random third slide">
+    <div class="carousel-caption">
+      <h3>See News</h3>
+      <p>Dates for oscar has been decided. Get your seats from here<button class="btn btn-md btn-danger">Get Seats</button></p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="./assets/covers/5.jpg"  alt="Random third slide">
+    <div class="carousel-caption">
+      <h3>See News</h3>
+      <p>Dates for oscar has been decided. Get your seats from here<button class="btn btn-md btn-danger">Get Seats</button></p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="./assets/covers/6.jpg"  alt="Random third slide">
+    <div class="carousel-caption">
+      <h3>See News</h3>
+      <p>Dates for oscar has been decided. Get your seats from here<button class="btn btn-md btn-danger">Get Seats</button></p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="./assets/covers/7.jpg"  alt="Random third slide">
+    <div class="carousel-caption">
+      <h3>See News</h3>
+      <p>Dates for oscar has been decided. Get your seats from here<button class="btn btn-md btn-danger">Get Seats</button></p>
+    </div>
+  </ng-template>
+
+
+</ngb-carousel>
+<!--src="https://lorempixel.com/1400/350?r=3"-->
+<div class="container">
+
+  <hr>
+  <hr>
+
+<ng-template #rt let-r="result" let-t="term">
+ <a [routerLink]="r.Link"><span style="font-size:20px">{{ r.name}}</span></a>   
+</ng-template>
+
+<!--<label for="typeahead-template">Search for a state:</label>-->
+<input placeholder="----Search By Movie Title----" class="form-control SecondInput"  (focus)="focusFunction()" (focusout)="focusOutFunction()" id="typeahead-template" type="text" [(ngModel)]="model" [ngbTypeahead]="search" [resultTemplate]="rt"
+  [inputFormatter]="formatter"  
+  [@heroState]='isDisplay'  
+   />
+<hr>
+<!--<pre>Model: {{ model | json }}</pre>-->
+
+
+
+<div class="downbar">
+<div style="margin-bottom:10px">
+<!--<pre>Model: {{ model | json }}</pre>-->
+<button (click)="Reset()" class="badge badge-pill badge-danger">Reset</button>
+<span *ngFor="let i of Genres" ><button (click)="FilterByGender(i)" [ngClass]="{'badge-warning': !IsSelected(i),'badge-default': IsSelected(i) , 'badge-pill': true, 'badge': true}">{{i}}</button>
+</span>
+</div>
+<table class="table">
+<thead>
+  <tr>
+  <td>Picture</td>
+  <td>Title</td>
+  <td>Year</td>
+  <td>Rating</td>
+    <td>Genres</td>
+  </tr>
+</thead>
+<tbody>
+  <tr   *ngFor="let i of movies"> 
+  <td>
+      <a [routerLink]="i.Link">
+    <img [src]="i.picture" class="rounded thumbnail" width="100px" alt="...">
+      </a>
+  </td>
+  <td>
+      <a [routerLink]="i.Link">      
+         {{i.name}}
+      </a>
+  </td>
+  <td>{{i.year}}</td>
+  <td><ngb-rating [(rate)]="i.rating" class="star"></ngb-rating></td>
+  <td>{{i.Genre}}</td>
+ 
+  </tr>
+   </tbody>
+</table>
+<div>

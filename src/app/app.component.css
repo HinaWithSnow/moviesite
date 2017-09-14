@@ -1,0 +1,24 @@
+.MainLabel{
+    font-size: 50px;
+    color:burlywood;
+    font-weight: bolder;
+}
+
+.Maingra{
+    margin-bottom: 5px;
+    background: rgba(43,43,43,1);
+background: -moz-linear-gradient(left, rgba(43,43,43,1) 0%, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 31%, rgba(44,44,44,1) 41%, rgba(28,28,28,1) 54%, rgba(19,19,19,1) 64%, rgba(71,71,71,1) 71%, rgba(76,76,76,1) 78%, rgba(102,102,102,1) 79%, rgba(89,89,89,1) 87%, rgba(89,89,89,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(43,43,43,1)), color-stop(0%, rgba(0,0,0,1)), color-stop(31%, rgba(17,17,17,1)), color-stop(41%, rgba(44,44,44,1)), color-stop(54%, rgba(28,28,28,1)), color-stop(64%, rgba(19,19,19,1)), color-stop(71%, rgba(71,71,71,1)), color-stop(78%, rgba(76,76,76,1)), color-stop(79%, rgba(102,102,102,1)), color-stop(87%, rgba(89,89,89,1)), color-stop(100%, rgba(89,89,89,1)));
+background: -webkit-linear-gradient(left, rgba(43,43,43,1) 0%, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 31%, rgba(44,44,44,1) 41%, rgba(28,28,28,1) 54%, rgba(19,19,19,1) 64%, rgba(71,71,71,1) 71%, rgba(76,76,76,1) 78%, rgba(102,102,102,1) 79%, rgba(89,89,89,1) 87%, rgba(89,89,89,1) 100%);
+background: -o-linear-gradient(left, rgba(43,43,43,1) 0%, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 31%, rgba(44,44,44,1) 41%, rgba(28,28,28,1) 54%, rgba(19,19,19,1) 64%, rgba(71,71,71,1) 71%, rgba(76,76,76,1) 78%, rgba(102,102,102,1) 79%, rgba(89,89,89,1) 87%, rgba(89,89,89,1) 100%);
+background: -ms-linear-gradient(left, rgba(43,43,43,1) 0%, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 31%, rgba(44,44,44,1) 41%, rgba(28,28,28,1) 54%, rgba(19,19,19,1) 64%, rgba(71,71,71,1) 71%, rgba(76,76,76,1) 78%, rgba(102,102,102,1) 79%, rgba(89,89,89,1) 87%, rgba(89,89,89,1) 100%);
+background: linear-gradient(to right, rgba(43,43,43,1) 0%, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 31%, rgba(44,44,44,1) 41%, rgba(28,28,28,1) 54%, rgba(19,19,19,1) 64%, rgba(71,71,71,1) 71%, rgba(76,76,76,1) 78%, rgba(102,102,102,1) 79%, rgba(89,89,89,1) 87%, rgba(89,89,89,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#595959', GradientType=1 );
+}
+
+
+
+.SecondLabel
+{
+
+}

@@ -1,0 +1,50 @@
+ .star {
+   font-size: 1.5rem;
+   color: #b0c4de;
+ }
+
+ .filled {
+   color: #1e90ff;
+ }
+.btn-md{
+  margin-left: 10px!important;
+}
+ .SecondInput {
+   border-radius: 30px!important;
+   height: 50px!important;
+   background-color: burlywood;
+ }
+
+ .badge-pill {
+   font-size: 20px!important;
+   color:whitesmoke
+ }
+.badge-warning
+{
+  background-color:#315f8e;
+}
+ ::-webkit-input-placeholder {
+   text-align: center;
+ }
+
+ :-moz-placeholder {
+   /* Firefox 18- */
+   text-align: center;
+ }
+
+ ::-moz-placeholder {
+   /* Firefox 19+ */
+   text-align: center;
+ }
+
+ :-ms-input-placeholder {
+   text-align: center;
+ }
+.downbar{
+background-color: ghostwhite;
+font-weight: bolder!important;
+
+}
+thead tr td{
+color:red
+}
