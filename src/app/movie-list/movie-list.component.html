@@ -58,7 +58,7 @@
   <hr>
 
 <ng-template #rt let-r="result" let-t="term">
- <a [routerLink]="r.Link"><span style="font-size:20px">{{ r.name}}</span></a>   
+ <a style="width:100%" [routerLink]="r.Link"><span style="font-size:20px">{{ r.name}}</span></a>   
 </ng-template>
 
 <!--<label for="typeahead-template">Search for a state:</label>-->
@@ -100,9 +100,9 @@
          {{i.name}}
       </a>
   </td>
-  <td>{{i.year}}</td>
+  <td style="color:black">{{i.year}}</td>
   <td><ngb-rating [(rate)]="i.rating" class="star"></ngb-rating></td>
-  <td>{{i.Genre}}</td>
+  <td style="color:black">{{i.Genre}}</td>
  
   </tr>
    </tbody>

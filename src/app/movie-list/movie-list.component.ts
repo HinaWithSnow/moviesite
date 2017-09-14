@@ -56,7 +56,7 @@ export class MovieListComponent {
     this.isDisplay = 'active';
   }
   public focusOutFunction() {
-    this.isDisplay = 'inactive';
+//    this.isDisplay = 'inactive';
   }
   public movies: Array<Movie> = [];
   public Genres: Array<string> = [];

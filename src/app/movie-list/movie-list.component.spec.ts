@@ -23,3 +23,8 @@ describe('MovieListComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+
+describe('Movie detail test', () => {
+  it('true is true', () => expect(true).toBe(true));
+});
